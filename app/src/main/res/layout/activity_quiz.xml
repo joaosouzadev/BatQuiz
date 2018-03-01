@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizActivity">
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.batquiz.QuizActivity">
+
+    <TextView
+        android:id="@+id/pergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:text="Qual dos inimigos do Batman é o líder da Liga dos Assassinos?"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgRespostas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pergunta">
+
+        <RadioButton
+            android:id="@+id/rbResposta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Ra's Al Ghul"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <RadioButton
+            android:id="@+id/rbResposta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Coringa"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <RadioButton
+            android:id="@+id/rbResposta3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Pinguim"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <RadioButton
+            android:id="@+id/rbResposta4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Bane"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnResponder"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:backgroundTint="#FFEB3B"
+        android:onClick="btnResponderOnClick"
+        android:text="RESPONDER"
+        android:textSize="20sp"
+        android:textColor="#212121"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+</ScrollView>
